@@ -6,7 +6,8 @@ Guía completa en español y calculadoras para **[NTO Idle](https://ntoidle.app)
 
 | Sección | Para qué sirve |
 |---|---|
-| **Hoy** | Tu perfil, personaje del día, próximos eventos en tu hora local y qué hacer ahora (hunt, task, misión, saga). |
+| **Mi ninja** | Escribís el nombre de tu personaje y lee tus datos reales del ranking público (level, exp, skills, elo, kills, muertes, horas jugadas). Te compara con los jugadores de tu nivel y arma un plan priorizado: qué hacer ahora, hoy y esta semana, y cómo. |
+| **Rivales** | La carrera de elo en vivo: top del ranking, elo por día de cada uno y en cuántos días los pasás. |
 | **Guía completa** | Toda la wiki oficial traducida y ordenada, con el *porqué* de cada mecánica. |
 | **Camino a Hokage** | Planificador de elo: cuánto sumás por día y en cuántos días llegás a 20.000. |
 | **EXP y niveles** | Kills y horas hasta cualquier level, con todos los multiplicadores reales. |
@@ -19,6 +20,10 @@ Guía completa en español y calculadoras para **[NTO Idle](https://ntoidle.app)
 | **Bosses, Eventos, Glosario, Clan** | Referencia rápida y organización del clan. |
 
 El perfil se guarda solo en tu navegador (localStorage). El sitio **no toca el juego**: solo calcula con datos públicos, así que no rompe ninguna regla del servidor.
+
+## Cómo lee tu personaje
+
+Las funciones de `api/` (Vercel) leen el ranking **público** de `ntoidle.app/api/ranking` — el mismo que muestra el juego a cualquier visitante — y lo cachean (1 a 10 min) para no cargar el servidor. No piden contraseña, no inician sesión y no tocan el cliente del juego.
 
 ## Publicar en Vercel
 

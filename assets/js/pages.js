@@ -1,6 +1,7 @@
 import * as C from "./calc.js";
 import { S, esc, fmt, short, hours, money, pct, $, $$, profileForm, bindProfileForm, rateFor, saveProfile, nextOccurrences, countdown, localTime, localDay } from "./app.js";
 import { GUIDE, GLOSSARY } from "./guide.js";
+import { pageNinja, pageRivals } from "./ninja.js";
 
 const footer = () => `<div class="footer">Números calculados con las fórmulas del código público del juego (cliente y motor del servidor) y la wiki oficial, actualizados al ${S.G.gen}. Pueden cambiar con parches: si algo no coincide con lo que ves en el juego, avisá en el Discord del clan.</div>`;
 const cls = { "Daño": "acc", "Off-tank": "warn", "Tank": "ch", "Soporte": "ok" };
@@ -528,5 +529,5 @@ function pageClan(root) {
   ${footer()}`;
 }
 
-export const PAGES = { "": pageHome, guia: pageGuide, hokage: pageHokage, exp: pageExp, hunts: pageHunts, tasks: pageTasks, misiones: pageMissions,
+export const PAGES = { "": pageNinja, rivales: pageRivals, resumen: pageHome, guia: pageGuide, hokage: pageHokage, exp: pageExp, hunts: pageHunts, tasks: pageTasks, misiones: pageMissions,
   forja: pageForge, sets: pageSets, vocaciones: pageVocs, bosses: pageBosses, eventos: pageEvents, glosario: pageGlossary, clan: pageClan };

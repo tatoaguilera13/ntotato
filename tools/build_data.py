@@ -162,6 +162,7 @@ game={
  "mech": mech, "sagas": sagas, "events": ev, "bijuus": bij,
  "vocs": vocs, "vocIds": voc_ids, "vipIds": vip_ids, "vocOfDayCheck": C['vocOfDay'],
  "ranks": config['ranks'],
+ "dmgf": config['damageFactors'],
 }
 os.makedirs(os.path.dirname(OUT), exist_ok=True)
 json.dump(game, open(OUT,'w'), ensure_ascii=False, separators=(',',':'))

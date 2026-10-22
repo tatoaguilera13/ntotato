@@ -93,7 +93,7 @@ export const localDay = (d) => { const t = C.serverDate(Date.now()), x = C.serve
 
 // ---------- navegación ----------
 const NAV = [
-  ["Empezar", [["", "🏠", "Hoy"], ["guia", "📖", "Guía completa"], ["hokage", "🍥", "Camino a Hokage"]]],
+  ["Empezar", [["", "🥷", "Mi ninja"], ["rivales", "🏁", "Rivales"], ["hokage", "🍥", "Camino a Hokage"], ["guia", "📖", "Guía completa"]]],
   ["Calculadoras", [["exp", "📈", "EXP y niveles"], ["hunts", "🗺️", "Hunts"], ["tasks", "📜", "Tasks y elo"], ["misiones", "🧭", "Misiones"],
     ["forja", "🔨", "Dragon Forge"], ["sets", "🛡️", "Sets y drops"]]],
   ["Referencia", [["vocaciones", "🥷", "Vocaciones"], ["bosses", "👹", "Bosses y sagas"], ["eventos", "⏰", "Eventos"], ["glosario", "🔤", "Glosario PT → ES"]]],

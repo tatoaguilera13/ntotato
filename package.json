@@ -1,0 +1,6 @@
+{
+  "name": "ntotato",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=18" }
+}
