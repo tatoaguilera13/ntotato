@@ -1,5 +1,5 @@
-import * as C from "./calc.js";
-import { PAGES } from "./pages.js";
+import * as C from "./calc.js?v=4";
+import { PAGES } from "./pages.js?v=4";
 
 export const S = { G: null, profile: null };
 
@@ -131,7 +131,7 @@ function initTheme() {
 async function boot() {
   initTheme();
   $("#menubtn").onclick = () => document.body.classList.toggle("navopen");
-  const G = await fetch("data/game.json").then(r => r.json());
+  const G = await fetch("data/game.json?v=4").then(r => r.json());
   S.G = G; C.bindData(G); S.profile = loadProfile();
   $("#gen").textContent = G.gen;
   addEventListener("hashchange", route);

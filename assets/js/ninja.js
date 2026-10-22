@@ -1,6 +1,6 @@
-import * as C from "./calc.js";
-import { analyze, rowsToObjects, pushHistory, metrics } from "./advisor.js";
-import { S, esc, fmt, short, hours, pct, $, $$, saveProfile, nextOccurrences, countdown, localTime, localDay } from "./app.js";
+import * as C from "./calc.js?v=4";
+import { analyze, rowsToObjects, pushHistory, metrics } from "./advisor.js?v=4";
+import { S, esc, fmt, short, hours, pct, $, $$, saveProfile, nextOccurrences, countdown, localTime, localDay } from "./app.js?v=4";
 
 const WHEN = [["ahora", "🔥 Hacé esto ahora"], ["hoy", "📅 Hoy"], ["semana", "🗓️ Esta semana"], ["info", "💡 Para saber"]];
 

@@ -1,5 +1,5 @@
 // Motor de recomendaciones: toma los datos públicos de tu personaje + el ranking completo y arma un plan priorizado.
-import * as C from "./calc.js";
+import * as C from "./calc.js?v=4";
 
 const median = (a) => { const s = a.filter(x => x != null && isFinite(x)).sort((x, y) => x - y); if (!s.length) return null; const m = s.length >> 1; return s.length % 2 ? s[m] : (s[m - 1] + s[m]) / 2; };
 const pctile = (a, v) => { const s = a.filter(x => x != null && isFinite(x)); if (!s.length) return null; return s.filter(x => x < v).length / s.length; };
